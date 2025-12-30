@@ -1,0 +1,14 @@
+header {
+    /* 渐变颜色 90度：左右 180：上下 */
+    background: linear-gradient(180deg, lightblue, #fff);
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

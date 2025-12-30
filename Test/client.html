@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辉煌包装顾客信息</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logoImg">
+                <div>
+                    <img src="../23510205049/HuiHuangBaoZhuang1/images/logo.png" alt="">
+                </div>
+                <h1>珠海市辉煌包装制品有限公司</h1>
+            </div>
+            <nav class="daohang">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="client.html" class="active">客户反馈</a></li>
+                    <li><a href="news.html">新闻动态</a></li>
+                </ul>
+            </nav>
+            <div class="carousel" id="carousel">
+                <!-- 轮播图列表 -->
+                <ul class="carousel-list" id="carouselList">
+                    <li class="carousel-item">
+                        <img src="../23510205049/HuiHuangBaoZhuang1/images/banner.jpg" alt="轮播图1">
+                    </li>
+                    <li class="carousel-item">
+                        <img src="../23510205049/HuiHuangBaoZhuang1/images/banner.jpg" alt="轮播图2">
+                    </li>
+                    <li class="carousel-item">
+                        <img src="../23510205049/HuiHuangBaoZhuang1/images/banner.jpg" alt="轮播图3">
+                    </li>
+                </ul>
+
+                <!-- 左右切换按钮 -->
+                <button class="carousel-btn prev-btn" id="prevBtn">‹</button>
+                <button class="carousel-btn next-btn" id="nextBtn">›</button>
+
+                <!-- 指示器 -->
+                <ul class="carousel-indicators" id="indicators">
+                    <li class="indicator-item active" data-index="0"></li>
+                    <li class="indicator-item" data-index="1"></li>
+                    <li class="indicator-item" data-index="2"></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <left class="news">
+                <h2>新闻中心</h2>
+                <ul>
+                    <li>电话：0756-1234567</li>
+                    <li>船政：0756-7654321</li>
+                    <li>黄生：13680361333</li>
+                </ul>
+                <img src="../23510205049/HuiHuangBaoZhuang1/images/Mid3.gif" alt="">
+            </left>
+            <right class="customer">
+                <h2>客户反馈</h2>
+                <div>
+                    <p>请您填写下面的资料</p>
+                    <form>
+                        <div>
+                            <label for="name">姓名：</label>
+                            <input type="text" placeholder="用户名必须输入">
+                        </div>
+                        <div>
+                            <label>性别：</label>
+                            <label for="male">男</label>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="female">女</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                        </div>
+                        <div>
+                            <label for="phone">联系电话：</label>
+                            <input type="tel" placeholder="请输入电话号码">
+                        </div>
+                        <div>
+                            <label for="email">电子邮箱：</label>
+                            <input type="email" placeholder="请输入电子邮箱">
+                        </div>
+                        <div>
+                            <label for="">所在区域：</label>
+                            <select name="city" id="">
+                                <option value="">请选择所在的区域</option>
+                                <option value="">香洲区</option>
+                                <option value="">斗门区</option>
+                                <option value="">金湾区</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="liuyan">反馈内容：</label>
+                            <textarea type="text" placeholder="请输入你的留言内容"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">提交</button>
+                            <button type="reset">重置</button>
+                        </div>
+                    </form>
+                </div>
+
+            </right>
+        </main>
+        <footer class="bottom">
+            <p>
+                版权所有©珠海市晖煌包装制品有限公司 　传真：86-0756-66666 地址：中国广东省珠海市斗门区乾务镇富山工业区　邮箱：huihuang6666666@163.com　 粤ICP备10049484号
+            </p>
+            <p>
+                练习作品 版权所有 吴嘉欣 23510205049
+            </p>
+        </footer>
+    </div>
+    <script>
+        // 获取DOM元素
+        const carousel = document.getElementById('carousel');
+        const carouselList = document.getElementById('carouselList');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicators = document.getElementById('indicators').querySelectorAll('.indicator-item');
+
+        // 轮播图配置
+        const itemCount = indicators.length; // 轮播图数量
+        const itemWidth = carousel.offsetWidth; // 每个轮播项的宽度（等于容器宽度）
+        let currentIndex = 0; // 当前显示的轮播图索引
+        let timer = null; // 自动播放定时器
+
+        // 1. 切换轮播图的核心函数
+        function switchCarousel(index) {
+            // 边界判断：如果索引超出范围，回到第一个/最后一个
+            if (index < 0) {
+                currentIndex = itemCount - 1;
+            } else if (index >= itemCount) {
+                currentIndex = 0;
+            } else {
+                currentIndex = index;
+            }
+
+            // 移动轮播图列表：核心是修改transform的X轴偏移
+            carouselList.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+
+            // 更新指示器样式
+            updateIndicators();
+        }
+
+        // 2. 更新指示器激活状态
+        function updateIndicators() {
+            indicators.forEach((item, index) => {
+                if (index === currentIndex) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+
+        // 3. 自动播放函数
+        function autoPlay() {
+            timer = setInterval(() => {
+                switchCarousel(currentIndex + 1);
+            }, 3000); // 每3秒切换一次
+        }
+
+        // 4. 绑定事件
+        // 左按钮点击：上一张
+        prevBtn.addEventListener('click', () => {
+            switchCarousel(currentIndex - 1);
+        });
+
+        // 右按钮点击：下一张
+        nextBtn.addEventListener('click', () => {
+            switchCarousel(currentIndex + 1);
+        });
+
+        // 指示器点击：切换到对应索引的轮播图
+        indicators.forEach((item) => {
+            item.addEventListener('click', () => {
+                const index = parseInt(item.dataset.index);
+                switchCarousel(index);
+            });
+        });
+
+        // 鼠标悬停：暂停自动播放
+        carousel.addEventListener('mouseenter', () => {
+            clearInterval(timer);
+        });
+
+        // 鼠标离开：恢复自动播放
+        carousel.addEventListener('mouseleave', () => {
+            autoPlay();
+        });
+
+        // 初始化：启动自动播放
+        autoPlay();
+    </script>
+</body>
+
+</html>

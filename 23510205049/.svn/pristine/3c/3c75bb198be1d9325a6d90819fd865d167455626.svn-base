@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吴嘉欣-小钱袋子记账本-首页</title>
+    <link rel="stylesheet" href="dist/bootstrap4.css">
+    <link rel="stylesheet" href="dist/bootstrap-icons.css">
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="dist/jQuery351.js"></script>
+    <script src="dist/bootstrap.js"></script>
+</head>
+
+<body class="loginBody">
+    <div class="loginBox border py-5 px-3 m-auto">
+        <h1 class="my-5 text-center">
+            <span class="text-success">小钱袋子</span>
+            <small>记账本</small>
+        </h1>
+        <form>
+            <div class="form-group row">
+                <label for="" class="col-3 col-form-label">用户名：</label>
+                <div class="col-9">
+                    <input id="user" class="form-control" type="text" placeholder="请输入用户名">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="" class="col-3 col-form-label">密码：</label>
+                <div class="col-9">
+                    <input id="user" class="form-control" type="password" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-9 offset-3">
+                    <button type="button" id="btn" class="btn btn-warning border border-danger"> 登 录 </button>
+                    <button type="reset" class="btn btn-light border border-dark"> 重 置 </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    btn = document.getElementById("btn");
+    // 事件监听
+    btn.addEventListener("click", GoToList);
+    // 事件绑定
+    // btn.onclick=GoToMain;
+    function GoToList() {
+        // alert("aaaaa")
+        window.location.href = "listFee.html";
+    }
+</script>

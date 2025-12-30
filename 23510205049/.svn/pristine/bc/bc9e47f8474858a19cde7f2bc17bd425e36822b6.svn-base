@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <script src="tailwindcss.com.js"></script>
+</head>
+
+<body>
+    <div class="bg-gray-200">
+        <header class="container mx-auto">
+            <div class="flex">
+                <picture class="basis-1/6 border">
+                    <source src="pc.png" media="(min-width:778px)">
+                    <source src="mobile.png" media="(max-width:778px)">
+                    <img src="pc.png">
+                </picture>
+                <div class="basis-5/6 border text-right">
+                    <ul id="menu">
+                        <li class="bg-blue-400 rounded py-2 px-4 text-white inline-block hover:bg-blue-900"><a href="index.html">首页</a></li>
+                        <li class="bg-blue-400 rounded py-2 px-4 text-white inline-block hover:bg-blue-900"><a href="help.html">常见问题</a></li>
+                        <li class="bg-blue-400 rounded py-2 px-4 text-white inline-block hover:bg-blue-900"><a href="#">繁体中文</a></li>
+                        <li class="bg-blue-400 rounded py-2 px-4 text-white inline-block hover:bg-blue-900"><a href="login.html">登录</a></li>
+                    </ul>
+                    <form class="my-6">
+                        <label>搜索留言：</label>
+                        <div class="inline-block">
+                            <input type="text" placeholder="请输入关键词" class="border outline-blue-400 focus:outline-blue-900 p-2">
+                            <select>
+                            <option>内容</option>
+                            <option>作者</option>
+                            </select>
+                        </div>
+                        <button class="bg-blue-300 text-gray-200 py-2 px-4 hover:bg-blue-900 hover:text-white rounded">搜索</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border border-yellow-200 bg-yellow-50 p-2 text-center">
+                网站提示信息!
+            </div>
+        </header>
+    </div>
+    <div class="container border mx-auto">
+        <main class="flex">
+            <article class="basis-4/6 border">
+                <div>
+                    <section class="flex">
+                        <aside class="bg-gray-700 text-white basis-1/6"></aside>
+                        <article class="bg-blue-50 basis-5/6 rounded">
+                            <div>
+                                <span>张三</span>
+                                <time class="float-right">2025/5/27 17:21:57</time>
+                            </div>
+                            <div>留言的具体内容</div>
+                            <div>回复的具体内容</div>
+                        </article>
+                    </section>
+                </div>
+                <div id="page">
+                    <ul class="m-2">
+                        <li class="inline-block border py-1 px-2 hover:bg-blue-300"><a href="#">&laquo;</a></li>
+                        <li class="inline-block border bg-blue-300 py-1 px-2 hover:bg-white hover:text-black"><a href="#">1</a></li>
+                        <li class="inline-block border py-1 px-2 hover:bg-blue-300"><a href="#">2</a></li>
+                        <li class="inline-block border py-1 px-2 hover:bg-blue-300"><a href="#">...</a></li>
+                        <li class="inline-block border py-1 px-2 hover:bg-blue-300"><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </article>
+            <aside class="basis-2/6 border p-3">
+                <div id="card-form" class="border border-gray-200 rounded-t-2xl">
+                    <h3 id="card-title" class="bg-gray-100 p-3 font-bold">我要留言</h3>
+                    <div id="card-body">
+                        <form>
+                            <div>
+                                <label>用户名：</label>
+                                <input type="text" placeholder="请输入您的昵称：">
+                            </div>
+                            <div>
+                                <label>留言内容：</label>
+                                <textarea placeholder="请输入留言内容"></textarea>
+                            </div>
+                            <div>
+                                <label>验证码：</label>
+                                <input type="number">
+                                <script>
+                                    document.write("用random生成一个4位随机数");
+                                </script>
+                            </div>
+                            <button type="button">提交</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="card-alt" class="border border-green-300 p-3 rounded-b-2xl my-2 bg-green-50">
+                    <ul class="p-5 text-green-500 dark:text-white">
+                        <li class="list-disc"></li>
+                        <li class="list-disc">
+                            <a href="#" class="text-red-500 hover:underline">重点超链接</a>
+                        </li>
+                        <li class="list-disc"></li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+        <footer class="bg-gray-200 text-center font-bold text-yellow-500">
+            <p>吴嘉欣 练习作品 23510205049</p>
+        </footer>
+    </div>
+</body>
+
+</html>

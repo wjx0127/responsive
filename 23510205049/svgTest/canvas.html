@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <style>
+        canvas {
+            width: 600px;
+            height: 400px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="myCan">
+
+    </canvas>
+</body>
+
+</html>
+<script>
+    myCan = document.getElementById("myCan");
+    can = myCan.getContext("2d");
+    can.fillRect(0, 0, 100, 200);
+    can.fillStyle = "red"
+    can.fillRect(0, 0, 100, 50);
+    can1 = document.getElementById("can1");
+    c1 = can1.getContext("2d");
+    c1.moveTo(0, 0);
+    c1.lineTo(100, 200);
+    c1.lineTo(200, 300);
+</script>

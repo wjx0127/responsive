@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>（张三 2025002）张三的项目列表首页 </title>
+</head>
+
+<body>
+	<h1>（张三 2025002）张三的项目列表首页</h1>
+	<p>请使用svn版本控制来和管理源代码，每个项目的有效提交不少于5次。提交时间应在有效范围内。有关版本控制的知识请查看课程笔记或自行网上查找</p>
+    <p>
+       svn检出地址：http://10.65.20.60:81/svn/23bigdata1/学号
+<br>----------------------------<br>
+        网页查看地址：http://10.65.20.60/web/23bigdata1/学号
+    </p>
+	<ul>
+		<li>每次动手前先要从服务器更新一下</li>
+		<li>每次结束前要把本地的提交到服务器</li>
+    </ul>
+	<hr>
+	<dl>
+	    <dt><a href="#">xxxx项目</a></dt>
+		<dd><strong>项目简介或心得：</strong>此项目1是一个。。。</dd>
+
+		<dt><a href="#">xxxx项目</a></dt>
+		<dd><strong>项目简介或心得：</strong>此项目2是一个。。。</dd>
+
+		<dt><a href="#">xxxx项目</a></dt>
+		<dd><strong>项目简介或心得：</strong>此项目3是一个。。。</dd>
+
+		<dt><a href="#">xxxx项目</a></dt>
+		<dd><strong>项目简介或心得：</strong>此项目4是一个。。。888</dd>
+	</dl> 
+</body>
+</html>

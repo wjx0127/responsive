@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svgtest</title>
+    <style>
+        .c {
+            fill: aqua;
+            /* stoke:边框 */
+            stroke: blue;
+            stroke-width: 2px;
+        }
+        
+        .r {
+            fill: antiquewhite;
+            width: 40px;
+            height: 30px;
+            stroke: blue;
+            stroke-width: 2px;
+        }
+        
+        svg {
+            position: relative;
+            top: -36px;
+            left: 0;
+            z-index: 2;
+        }
+        
+        .link {
+            display: inline-block;
+            width: 80px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+            background: rgba(red, green, blue, alpha);
+            border: 2px solid yellow;
+        }
+        
+        .link:hover {
+            border: 2px solid red;
+        }
+        
+        .pol {
+            fill: transparent;
+            stroke: aquamarine;
+            stroke-width: 3px;
+            stroke-dashoffset: 232px;
+            stroke-dasharray: 232px;
+            transition: all ls;
+        }
+        
+        .pol:hover {
+            stroke-dashoffset: 0;
+        }
+        
+        .ell {
+            stroke: aqua;
+            stroke-width: 2px;
+            stroke-dasharray: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display:flex;">
+        <aside style="width: 300px;">left</aside>
+        <article style="width: 600px; height: 400px;">right</article>
+    </div>
+    <svg>
+        <circle cx="100" cy="50" r="50" class="c"/>
+        <rect x="80" y="35"class="r"/>
+    </svg>
+    <p>
+        <nav>
+            <a href="#" class="link">首页</a>
+            <svg>
+            <polyline points="0,0,80,0 80,36 0,36 0,0" class="pol"/>
+        </svg>
+            <a href="#" class="link">联系</a>
+        </nav>
+    </p>
+    <a href="#" class="link">联系
+        <svg>
+            <ellipse cx="40" cy="18" rx="80" ry="30" class="ell"/>
+        </svg>
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吴嘉欣-小钱袋子记账本-新增记账</title>
+    <link rel="stylesheet" href="dist/bootstrap4.css">
+    <link rel="stylesheet" href="dist/bootstrap-icons.css">
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="dist/jQuery351.js"></script>
+    <script src="dist/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <!-- 响应式折叠菜单 -->
+
+            </nav>
+        </header>
+        <main></main>
+        <footer>
+            <p>
+                练习作品 版权所有 吴嘉欣 23510205049
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

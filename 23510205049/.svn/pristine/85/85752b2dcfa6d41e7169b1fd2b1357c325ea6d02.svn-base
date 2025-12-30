@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <script src="tailwindcss.com.js"></script>
+</head>
+
+<body>
+    <div class="bg-gray-200">
+        <header class="container mx-auto">
+            <div class="flex">
+                <picture class="basis-1/6 border">aaa</picture>
+                <div class="basis-5/6 border text-right">
+                    <ul id="menu">
+                        <li class="bg-blue-400 rounded py-2 px-4 text-white inline-block hover:bg-blue-900"><a href="index.html">首页</a></li>
+                        <li class="bg-blue-400 rounded py-2 px-4 text-white inline-block hover:bg-blue-900"><a href="help.html">常见问题</a></li>
+                        <li class="bg-blue-400 rounded py-2 px-4 text-white inline-block hover:bg-blue-900"><a href="#">繁体中文</a></li>
+                        <li class="bg-blue-400 rounded py-2 px-4 text-white inline-block hover:bg-blue-900"><a href="login.html">登录</a></li>
+                    </ul>
+                    <form class="my-6">
+                        <label>搜索留言：</label>
+                        <div class="inline-block">
+                            <input type="text" placeholder="请输入关键词" class="border outline-blue-400 focus:outline-blue-900 p-2">
+                            <select>
+                            <option>内容</option>
+                            <option>作者</option>
+                            </select>
+                        </div>
+                        <button class="bg-blue-300 text-gray-200 py-2 px-4 hover:bg-blue-900 hover:text-white rounded">搜索</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border border-yellow-200 bg-yellow-50 p-2 text-center">
+                网站提示信息!
+            </div>
+        </header>
+    </div>
+    <div class="container border mx-auto">
+        <main class="flex">
+            <article class="basis-4/6 border">
+                aaa
+            </article>
+            <aside class="basis-2/6 border">
+                bbb
+            </aside>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>

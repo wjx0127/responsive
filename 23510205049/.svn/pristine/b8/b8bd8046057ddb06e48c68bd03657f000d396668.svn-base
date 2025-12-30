@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辉煌包装-客户反馈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logoBox">
+                <div>
+                    <img src="images/logo.png" alt="">
+                </div>
+                <h1>珠海市晖煌包装制品有限公司</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="feedback.html" class="active">客户反馈</a></li>
+                    <li><a href="news.html">新闻动态</a></li>
+                </ul>
+            </nav>
+            <div class="focusPicBox">
+                <img src="images/banner.jpg" alt="">
+            </div>
+        </header>
+
+        <main>
+            <aside class="aside">
+                <h2>新闻中心</h2>
+                <ul>
+                    <li>电话：0756-1234567</li>
+                    <li>船政：0756-7654321</li>
+                    <li>黄生：13680361333</li>
+                </ul>
+                <div>
+                    <img src="images/Mid3.gif" alt="">
+                </div>
+            </aside>
+            <article class="master">
+                <h2>客户反馈</h2>
+                <div class="feedBackInputBox">
+                    <p>请您填写下面的资料</p>
+                    <form>
+                        <div class="iptBox">
+                            <label for="userName">姓名：</label>
+                            <input type="text" id="userName" required placeholder="用户名必须输入">
+                        </div>
+                        <div class="iptBox">
+                            <label for="age">年龄：</label>
+                            <input type="number" id="age" placeholder="输入0-127" required min="0" max="127">
+                        </div>
+                        <div class="iptBox">
+                            <label for="color">喜欢颜色：</label>
+                            <input type="color" id="color">
+                        </div>
+                        <div class="iptBox">
+                            <label for="date">日期：</label>
+                            <input type="datetime-local" id="date">
+                        </div>
+                        <div class="iptBox">
+                            <label>性别：</label>
+                            <input type="radio" id="male" name="sex"> 男
+                            <input type="radio" id="female" name="sex"> 女
+                        </div>
+                        <div class="iptBox">
+                            <label for="phone">联系电话：</label>
+                            <input type="tel" id="phone" placeholder="亲输入电话号码">
+                        </div>
+                        <div class="iptBox">
+                            <label for="email">电子邮箱：</label>
+                            <input type="email" id="email" placeholder="亲输入电子邮箱">
+                        </div>
+                        <div class="iptBox">
+                            <label for="city">所在区域：</label>
+                            <select name="" id="city">
+                                <option value="">请选择所在区域</option>
+                                <option value="金湾">金湾</option>
+                                <option value="斗门">斗门</option>
+                                <option value="香洲">香洲</option>
+                            </select>
+                        </div>
+                        <div class="iptBox">
+                            <label for="content">反馈内容：</label>
+                            <textarea id="content" placeholder="请输入你的留言内容"></textarea>
+                        </div>
+                        <div class="btnBox">
+                            <button type="submit">提  交</button>
+                            <button type="reset">重  填</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>版权所有©珠海市晖煌包装制品有限公司 　传真：86-0756-66666 地址：中国广东省珠海市斗门区乾务镇富山工业区　邮箱：huihuang6666666@163.com　 粤ICP备10049484号</p>
+            <p>练习作品 版权没有 张三 1245325325</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吴嘉欣-小钱袋子记账本-用户管理</title>
+    <link rel="stylesheet" href="dist/bootstrap4.css">
+    <link rel="stylesheet" href="dist/bootstrap-icons.css">
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="dist/jQuery351.js"></script>
+    <script src="dist/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="py-3">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark my-3">
+                <!-- 响应式折叠菜单 -->
+                <a href="#" class="navbar-brand">吴嘉欣-小钱袋子记账本</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                    <span class="bi bi-plus"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="listFee.html">账单列表</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="typeSet.html">分类设置</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paySet.html">支付方式</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">财务分析</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="report.html#date">日报表</a>
+                                <a class="dropdown-item" href="report.html#month">月报表</a>
+                                <a class="dropdown-item" href="report.html#year">年报表</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="userManage.html">账号管理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="addFee.html">我要记账</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">退出</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="alert alert-light border">
+                admin:您好，欢迎使用小钱袋子。科学理财，从记账开始。快点添加新账单吧。(2025-10-28 10:58:28)
+            </div>
+        </header>
+        <main>
+            <div class="row">
+                <section class="col-md-9 mb-3">
+                    <table class="table table-bordered table-striped table-hover">
+                        <tr>
+                            <th>账号</th>
+                            <th>昵称</th>
+                            <th>最后的登录时间</th>
+                            <th>最后的登录IP</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>张三</td>
+                            <td>2025-11-11 10:41:55</td>
+                            <td>10.65.20.61</td>
+                            <td>
+                                <a href="#" data-toggle="modal" data-target="#del" alt="删除"><span class="bi bi-x-lg"></span></a>
+                                <a href="#" alt="修改"><span class="bi bi-hammer"></span></a>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="col-md-3">
+                    <div class="card">
+                        <div class="card-header text-center"><span class="bi bi-plus text-success"></span> 添加与编辑管理员</div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">名称：</label>
+                                    <div class="col-sm-8">
+                                        <input id="user" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">昵称：</label>
+                                    <div class="col-sm-8">
+                                        <input id="user" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">密码：</label>
+                                    <div class="col-sm-8">
+                                        <input id="user" class="form-control" type="password">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">确认：</label>
+                                    <div class="col-sm-8">
+                                        <input id="user" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-8 offset-sm-4">
+                                        <button class="btn btn-warning" type="button"> 确 定 </button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>
+                练习作品 版权所有 吴嘉欣 23510205049
+            </p>
+        </footer>
+    </div>
+    <!-- 模态窗 -->
+    <div class="modal fade" id="del">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    账单操作对话框
+                </div>
+                <div class="modal-body">
+                    你确认该操作吗？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"> 确 定 </button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal"> 取 消 </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

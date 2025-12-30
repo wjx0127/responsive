@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辉煌包装-新闻动态</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logoBox">
+                <div>
+                    <img src="images/logo.png" alt="">
+                </div>
+                <h1>珠海市晖煌包装制品有限公司</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="feedback.html">客户反馈</a></li>
+                    <li><a href="news.html" class="active">新闻动态</a></li>
+                </ul>
+            </nav>
+            <div class="focusPicBox">
+                <img src="images/banner.jpg" alt="">
+            </div>
+        </header>
+
+        <main>
+            <aside class="aside">
+                <h2>新闻中心</h2>
+                <ul>
+                    <li>电话：0756-1234567</li>
+                    <li>船政：0756-7654321</li>
+                    <li>黄生：13680361333</li>
+                </ul>
+                <div>
+                    <img src="images/Mid3.gif" alt="">
+                </div>
+            </aside>
+            <article class="master">
+                <h2>最新新闻</h2>
+                <div class="newsListBox">
+                    <ul class="newsList">
+                        <li>
+                            <a href="#">我校隆重举行“南洋知行·探索珠澳研习营”欢迎会</a> <time>9-26</time>
+                        </li>
+                        <li>
+                            <a href="#">我校组织开展2025级新生安全教育讲座</a> <time>9-25</time>
+                        </li>
+                        <li>
+                            <a href="#">梦想花开 未来可期——人文学院召开2025级新生见面会</a> <time>9-24</time>
+                        </li>
+                        <li>
+                            <a href="#">我校举行纪念中国人民抗日战争胜利80周年主题升旗仪式暨国旗下的“思政课”活动</a> <time>9-23</time>
+                        </li>
+                        <li>
+                            <a href="#">我校开展新学期教学与实训室安全检查</a> <time>9-22</time>
+                        </li>
+                        <li>
+                            <a href="#">校地携手聚合力 共谱教育新篇——陈斗雪校长带队出席阳西县“双百行动”联席会议</a> <time>9-21</time>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>版权所有©珠海市晖煌包装制品有限公司 　传真：86-0756-66666 地址：中国广东省珠海市斗门区乾务镇富山工业区　邮箱：huihuang6666666@163.com　 粤ICP备10049484号</p>
+            <p>练习作品 版权没有 张三 1245325325</p>
+        </footer>
+    </div>
+</body>
+
+</html>

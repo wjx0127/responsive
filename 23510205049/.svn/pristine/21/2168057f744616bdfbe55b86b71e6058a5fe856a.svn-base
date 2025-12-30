@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zhcptOld</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <script src="dist/js/jQuery351 (2).js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <link src="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="col-5">
+                <img src="image/czylogo.png" alt="">
+            </div>
+            <div class="col-7">
+                <ul class="nav nav-link">
+                    <li class="nav-item"><a href="#" class="nav-link active">设为首页</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">加入收藏</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">业务系统</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">英文版本</a></li>
+                </ul>
+                <form>
+                    <input type="search" placeholder="请输入关键词">
+                </form>
+            </div>
+        </header>
+        <nav>
+
+        </nav>
+        <div id="focusPic" data-ride="carousel" class="carousel fade">
+            <!-- 索引小点 -->
+            <ol class="carousel-in">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <!-- 一幕幕切换内容 -->
+            <div>
+
+            </div>
+            <!-- 左右箭头翻下一页 -->
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <div id="news"></div>
+        <div id="links"></div>
+        <div id="sPic"></div>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
